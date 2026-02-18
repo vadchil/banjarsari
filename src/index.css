@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #1f1f1f;
+  background-color: #f5efe6;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5efe6;
+  color: #2c2521;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: rgba(207, 170, 131, 0.4);
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+}
+
+@layer utilities {
+  .gallery-gradient {
+    background: linear-gradient(90deg, rgba(245, 239, 230, 1) 0%, rgba(245, 239, 230, 0) 15%, rgba(245, 239, 230, 0) 85%, rgba(245, 239, 230, 1) 100%);
+  }
+}
